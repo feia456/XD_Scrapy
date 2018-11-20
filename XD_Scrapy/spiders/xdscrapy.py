@@ -6,8 +6,8 @@ class XdscrapySpider(XMLFeedSpider):
     name = 'xdscrapy'
     allowed_domains = ['http://iqianyue.com/']
     start_urls = ['http://http://iqianyue.com//feed.xml']
-    iterator = 'iternodes' # you can change this; see the docs
-    itertag = 'item' # change it accordingly
+    iterator = 'html' # you can change this; see the docs
+    itertag = '#reporttable > table > tbody' # change it accordingly
 
     def parse_node(self, response, selector):
         i = {}

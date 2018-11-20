@@ -11,6 +11,9 @@ import scrapy
 class XdScrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    ZH=scrapy.Field();
+    SQR=scrapy.Field();
+    SXYW=scrapy.Field();
     HTLSH=scrapy.Field();
     CZLSH=scrapy.Field();
     KHMC=scrapy.Field();
@@ -27,4 +30,5 @@ class XdScrapyItem(scrapy.Item):
     DKYT = scrapy.Field();
     FKKHJL = scrapy.Field();
     FKKHJLDH = scrapy.Field();
+    RQ=scrapy.Field();
     pass
